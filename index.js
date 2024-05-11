@@ -1,4 +1,6 @@
-const dropWhile = (arr, func) => {
-  while (arr.length > 0 && !func(arr[0])) arr = arr.slice(1);
-  return arr;
+const factorialRecursive = (n) => {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorialRecursive(n - 1);
 };
